@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+ls#!/usr/bin/env python3
 """
 Hello World Multi Linguas
 
@@ -31,10 +31,12 @@ __license__ = "Unlicense"
 #separadamente e coloca encadeado um atras do outro.
 #if __name__ = "__main__" -> para identificar bloco principal
 
-import os 
+import os #biblioteca para manipular/ler variaveis do ambiente
+#name convention para var = snake case -> uso de _ para separacao
 
 current_language = os.getenv("LANG", "en_US")[:5]
-#name convention para var = snake case -> uso de _ para separacao
+#getenv le a variavel do ambiente caso exista, seta um padrao caso nao
+
 msg = "Hello, World!"    
 if current_language == "pt_BT":
     msg = "Ola Mundo!"
